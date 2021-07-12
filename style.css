@@ -79,6 +79,10 @@ p{
     margin: 0 10px 0 0;
 }
 
+.telegram{
+    margin: 0 0 0 10px;
+}
+
 .schoolList{
     list-style:none;
     padding-left: 20px;
