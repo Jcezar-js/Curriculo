@@ -1,3 +1,3 @@
-# Este é o meu curriculo, basta baixar a pasta inteira e abrir o arquivo index em seu computador para ve-lo! Espero que goste :)
+# Este é o meu curriculo, para visualizar é só acessálo pelo link: https://jcezar-js.github.io/Curriculo/index.html
 
 -Julio Cezar
