@@ -1,10 +1,4 @@
-/* Documentação w3School */
-body {
-    background: #dfdfdf;
-    font-family: 'Raleway', sans-serif;
-    color: #222222;
-    margin: 0;
-}
+
 /* responsivo */
 *,*:before,*:after{
 	-webkit-box-sizing: border-box;
@@ -12,11 +6,24 @@ body {
     box-sizing: border-box;	
 }
 
+/***************************************** BODY *****************************************/
+body {
+    background: #dfdfdf;
+    font-family: 'Raleway', sans-serif;
+    color: #222222;
+    margin: 0;
+}
+
 .container{
     width: 900px;
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+    color: #222222;
+}
+/***************************************** PROFILE PIC *****************************************/
 .profile{
     text-align: center;
     margin-bottom: 25px;
@@ -24,7 +31,7 @@ body {
 
 /* Estilização foto: */
 .foto-principal{
-    width:200px;
+    width:250px;
 
     border: 2px solid #FFFFFF; /* Shorthand*/
     border-radius: 10px;
@@ -34,7 +41,10 @@ body {
     padding: 5px;
 }
 
-/* Formatação do texto */
+
+
+
+/***************************************** NAME *****************************************/
 h1{
     margin-top:10px;
     margin-bottom: 0;
@@ -50,22 +60,109 @@ h2{
     letter-spacing: -1px;
 }
 
-
-h4{
-    margin-bottom: 5px;
-}
-h5{
-    margin-top: 0;
-    margin-bottom: 5px;
-    font-weight: 100;
-    font-style: italic;
+/***************************************** BUTTONS NAVIGATION *****************************************/
+.navigation{
+    display: flex;
+    justify-content: space-around;
 }
 
-p{
-    margin-top: 0px;
-    line-height: 25px;
+.navigation-btn{
+    text-decoration: none;
+    color: #222222;
+
+    background:#a8a8a8;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 10px;
+    width: 195px;
+    margin: 16px auto;
+    border-radius: 32px;
+    display: block;
+
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+
+    
 }
 
+.navigation-btn:hover{
+    background: #c7c7c7;
+}
+
+
+/***************************************** CARD CONTACTS *****************************************/
+.closeButton{
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    font-size: 25px;
+    background: rgb(255, 249, 249);
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 10%;
+
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+
+    border: solid black 1px;
+
+}
+
+.closeButton:hover{
+    background: rgb(172, 171, 171);
+}
+
+.card-iconsContact{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+
+    background: #a8a8a8;
+    border-radius: 16px;
+
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+
+    width: 25%;
+    
+    padding: 30px 10px;
+    margin: 25px auto;
+
+    display: none;
+    justify-content: space-between;
+    border: solid black 1px;
+}
+
+#contactTittle{
+    font-style: normal;
+    color: #222222;
+    margin: 25px auto;
+}
+
+/* ICONS */
 .social-links{
     text-decoration: none;
 }
@@ -84,10 +181,131 @@ p{
     margin: 0 10px 0 0;
 }
 
+/***************************************** COURSES CARD *****************************************/
+.cursos{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+
+    background: #a8a8a8;
+    border-radius: 16px;
+
+    transition: ease 500ms;
+    transform-origin:20% 40%;
+
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+
+    width: 70%;
+    padding: 40px 20px;
+
+    display: none;
+    justify-content: space-between;
+    border: solid black 1px;
+
+}
+
+
+
 .schoolList{
     list-style:none;
     padding-left: 20px;
 }
+
+/***************************************** TOOLS CARD *****************************************/
+.ferramentas{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+
+    background: #a8a8a8;
+    border-radius: 16px;
+
+    transition: ease 500ms;
+    transform-origin:20% 40%;
+
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+
+    width: 10%;
+    padding: 20px 25px;
+    display: none;
+
+    border: solid black 1px;
+    justify-content: space-between;
+
+
+}
+
+.details{
+    list-style:none;
+    padding-left: 15px;
+}
+
+/***************************************** EXP CARD *****************************************/
+.exp{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+
+    background: #a8a8a8;
+    border-radius: 16px;
+
+    transition: ease 500ms;
+    transform-origin:20% 40%;
+
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+
+    width: 60%;
+    padding: 20px 30px;
+    display: none;
+
+    border: solid black 1px;
+
+}
+
+/***************************************** TEXTOS *****************************************/
+h4{
+    margin-bottom: 5px;
+}
+h5{
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+p{
+    margin-top: 0px;
+    line-height: 25px;
+}
+
+
 .jobsList{
     list-style: none;
     padding-left: 20px;
@@ -99,18 +317,44 @@ p{
     text-align: center;
 }
 
-/* responsivo mobile first */
 
-@media screen and (max-width: 923px){
-    .container{
-        padding: 0 2.4em 0 2.4em;
-    }
-    .footer{
-        padding: 0 2.4em 0 2.4em;
+
+/* responsivo mobile first */
+@media screen and (max-width: 1600px){
+    .ferramentas{
+        width: 15%;
     }
 }
 
-@media screen and (max-width: 860px){
+@media screen and (max-width: 1150px){
+    .ferramentas{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 943px){
+    .container{
+        padding: 0 2.4em 0 2.4em;
+    }
+    .footer{
+        padding: 0 2.4em 0 2.4em;
+    } 
+
+    .card-iconsContact{
+        font-size: 15px;
+
+    }
+    .ferramentas{}
+    .cursos{
+        width: 75%;
+    }
+    .exp{
+        width: 75%;
+    }
+}
+
+
+@media screen and (max-width: 876px){
     .container{
         width: 100%;
         padding: 0 2.4em 0 2.4em;
@@ -118,6 +362,19 @@ p{
     .footer{
         width: 100%;
         padding: 0 2.4em 0 2.4em;
+    }
+
+    .card-iconsContact{
+        width: 30%;
+    }
+
+    .cursos{
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .ferramentas{
+        width: 25%;
     }
 }
 
@@ -129,6 +386,11 @@ p{
     .footer{
         width: 100%;
         padding: 0 2.4em 0 2.4em;
+    }
+
+    .exp{
+        font-size: 13px;
+        width: 85%;
     }
 }
 
@@ -143,6 +405,20 @@ p{
         width: 100%;
         padding: 0 2.4em 0 2.4em;
     }
+
+    .card-iconsContact{
+        width: 35%;
+    }
+
+    .ferramentas{
+        width: 30%;
+        font-size: 15px;
+    }
+
+    .exp{
+        font-size: 13px;
+        width: 100%;
+    }
 }
 
 
@@ -156,6 +432,20 @@ p{
         width: 100%;
         margin-right: 0;
         padding: 0 2.4em 0 2.4em;
+    }
+    .card-iconsContact{
+        width: 55%;
+    }
+
+    .ferramentas{
+        width: 40%;
+    }
+
+    .exp{
+        font-size: 12px;
+        width: 100%;
+
+        margin: 15px auto;
     }
 }
 
