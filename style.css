@@ -169,12 +169,9 @@ h2{
 .social-icons{
     width: 20px;
 }
-.instagram{
-    margin: 0 10px 0 10px;
-}
 
 .linkedin{
-    margin: 0 10px 0 0;
+    margin: 0 10px 0 10px;
 }
 
 .github{
@@ -344,7 +341,6 @@ p{
         font-size: 15px;
 
     }
-    .ferramentas{}
     .cursos{
         width: 75%;
     }
